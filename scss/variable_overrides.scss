@@ -1,18 +1,36 @@
-.rotation{
+.rotation-0{
     cursor: pointer;
     transform: rotate(0);
     transition: transform 1s;
-    &:hover{
-        transform: rotate(180deg);
-        transition: transform 1s;
-        & > .test-top,.test-bottom,.test-right,.test-left{
-            transform: rotate(-180deg);
-            transition: transform 1s;
-        }
-    }
 }
-.test{
-    transform: rotate(0);
+.rotation-left-90{
+    cursor: pointer;
+    transform: rotate(-90deg);
+    transition: transform 1s;
+}
+.rotation-right-90{
+    cursor: pointer;
+    transform: rotate(90deg);
+    transition: transform 1s;
+}
+.rotation-right-180{
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: transform 1s;
+}
+.rotation-left-180{
+    cursor: pointer;
+    transform: rotate(-180deg);
+    transition: transform 1s;
+}
+.rotation-right-270{
+    cursor: pointer;
+    transform: rotate(270deg);
+    transition: transform 1s;
+}
+.rotation-left-270{
+    cursor: pointer;
+    transform: rotate(-270deg);
     transition: transform 1s;
 }
 .circle-right{
