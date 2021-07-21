@@ -1,0 +1,23 @@
+.rotation{
+    cursor: pointer;
+    transform: rotate(0);
+    transition: transform 1s;
+    &:hover{
+        transform: rotate(180deg);
+        transition: transform 1s;
+        & > .test-top,.test-bottom,.test-right,.test-left{
+            transform: rotate(-180deg);
+            transition: transform 1s;
+        }
+    }
+}
+.test{
+    transform: rotate(0);
+    transition: transform 1s;
+}
+.circle-right{
+    right: -12%;
+}
+.circle-left{
+    left: -12%;
+}

@@ -4,14 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Yem David</title>
 </head>
 <body>
-    <header></header>
-    <section>
-        <article></article>
-        <aside></aside>
-    </section>
-    <footer></footer>
+    <main class="container-fluid vh-100">
+        <header class="row min-vh-10 bg-secondary py-3">
+            <div class="row">
+                <h1 class="col text-center text-quaternary">Yem David</h1>
+            </div>
+            <div class="row">
+                <h2 class="col text-center h3 text-quaternary">Développeur Web</h2>
+            </div>
+        </header>
+        <section class="row bg-success d-flex justify-content-center min-vh-80">
+            <div class="row w-50 bg-dark d-flex justify-content-center rounded-circle py-3 rotation position-relative my-5">
+                <div class="col-3 text-quaternary d-flex justify-content-center bg-primary vh-5 position-absolute top-0 test test-top">
+                    HTML5/CSS3
+                </div>
+                <div class="col-3 text-quaternary d-flex justify-content-center bg-primary vh-5 position-absolute top-50 circle-left test test-left">
+                    JS
+                </div>
+                <div class="col-3 text-quaternary d-flex justify-content-center bg-primary vh-5 position-absolute top-50 circle-right test test-right">
+                    SASS
+                </div>
+                <div class="col-3 text-quaternary d-flex justify-content-center bg-primary vh-5 position-absolute bottom-0 test test-bottom">
+                    MYSQL
+                </div>
+            </div>
+        </section>
+        <footer class="row min-vh-10 bg-secondary py-3">
+
+        </footer>
+    </main>
+    <script src="./src/index.js"></script>
 </body>
 </html>

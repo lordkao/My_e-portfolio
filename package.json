@@ -1,0 +1,22 @@
+{
+  "name": "e-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/style.scss:./css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lordkao/My_e-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lordkao/My_e-portfolio/issues"
+  },
+  "homepage": "https://github.com/lordkao/My_e-portfolio#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.2"
+  }
+}
