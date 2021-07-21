@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./scss/style.scss:./css/style.css --style compressed"
+    "sass": "sass --watch ./scss/style.scss:./css/style.css --style compressed",
+    "start": "webpack serve"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,12 @@
   },
   "homepage": "https://github.com/lordkao/My_e-portfolio#readme",
   "dependencies": {
-    "bootstrap": "^5.0.2"
+    "bootstrap": "^5.0.2",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-serve": "^4.0.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.2"
   }
 }
