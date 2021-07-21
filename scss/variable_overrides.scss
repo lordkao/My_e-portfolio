@@ -1,31 +1,52 @@
 .rotation-0{
-    cursor: pointer;
     transform: rotate(0);
     transition: transform 1s;
 }
 .rotation-left-90{
-    cursor: pointer;
     transform: rotate(-90deg);
     transition: transform 1s;
 }
 .rotation-right-90{
-    cursor: pointer;
     transform: rotate(90deg);
     transition: transform 1s;
 }
 .rotation-right-180{
-    cursor: pointer;
     transform: rotate(180deg);
     transition: transform 1s;
 }
 .rotation-left-180{
-    cursor: pointer;
     transform: rotate(-180deg);
     transition: transform 1s;
 }
 .circle-right{
     right: -12%;
+    cursor: pointer;
 }
 .circle-left{
     left: -12%;
+    cursor: pointer;
+}
+.circle-top{
+    top: -3%;
+    cursor: pointer;
+}
+.circle-bottom{
+    bottom: -3%;
+    cursor: pointer;
+}
+.text-top-left{
+    transform: rotate(-180deg);
+    transition: transform 1s;
+}
+.text-top-right{
+    transform: rotate(180deg);
+    transition: transform 1s;
+}
+.text-left{
+    transform: rotate(-90deg);
+    transition: transform 1s;
+}
+.text-right{
+    transform: rotate(90deg);
+    transition: transform 1s; 
 }
