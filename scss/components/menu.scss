@@ -1,0 +1,51 @@
+.rotation-0{
+    transform: rotate(0);
+    transition: transform 0.5s;
+}
+.rotation-left-90{
+    transform: rotate(-90deg);
+    transition: transform 0.5s;
+}
+.rotation-right-90{
+    transform: rotate(90deg);
+    transition: transform 0.5s;
+}
+.rotation-right-180{
+    transform: rotate(180deg);
+    transition: transform 0.5s;
+}
+.rotation-left-180{
+    transform: rotate(-180deg);
+    transition: transform 0.5s;
+}
+.text-top-left{
+    transform: rotate(-180deg);
+    transition: transform 0.5s;
+}
+.text-top-right{
+    transform: rotate(180deg);
+    transition: transform 0.5s;
+}
+.text-left{
+    transform: rotate(-90deg);
+    transition: transform 0.5s;
+}
+.text-right{
+    transform: rotate(90deg);
+    transition: transform 0.5s; 
+}
+#right-circle{
+    top: 275px;
+    right: -120px;
+}
+#left-circle{
+    top: 275px;
+    left: -120px;
+}
+#top-circle,#left-circle,#right-circle,#bottom-circle{
+    height: 50px;
+}
+#circle{
+    width: 600px;
+    height: 600px;
+}
