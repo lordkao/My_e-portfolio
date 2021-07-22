@@ -11,53 +11,29 @@ class competences {
         this.elt3 = elt3
         this.elt4 = elt4
     }
-    topLeft(){
-        this.elt1.classList.add('text-top-left')
-        this.elt2.classList.add('text-top-left')
-        this.elt3.classList.add('text-top-left')
-        this.elt4.classList.add('text-top-left')
+    suppressionClass(classe){
+        this.elt1.classList.remove(classe)
+        this.elt2.classList.remove(classe)
+        this.elt3.classList.remove(classe)
+        this.elt4.classList.remove(classe)
     }
-    topRight(){
-        this.elt1.classList.add('text-top-right')
-        this.elt2.classList.add('text-top-right')
-        this.elt3.classList.add('text-top-right')
-        this.elt4.classList.add('text-top-right')
-    }
-    left(){
-        this.elt1.classList.add('text-left')
-        this.elt2.classList.add('text-left')
-        this.elt3.classList.add('text-left')
-        this.elt4.classList.add('text-left')
-    }
-    right(){
-        this.elt1.classList.add('text-right')
-        this.elt2.classList.add('text-right')
-        this.elt3.classList.add('text-right')
-        this.elt4.classList.add('text-right')
+    textOrientation(classe){
+        this.elt1.classList.add(classe)
+        this.elt2.classList.add(classe)
+        this.elt3.classList.add(classe)
+        this.elt4.classList.add(classe)
     }
     removeTopLeft(){
-        this.elt1.classList.remove('text-top-left')
-        this.elt2.classList.remove('text-top-left')
-        this.elt3.classList.remove('text-top-left')
-        this.elt4.classList.remove('text-top-left')
+        this.suppressionClass('text-top-left')
     }
     removeTopRight(){
-        this.elt1.classList.remove('text-top-right')
-        this.elt2.classList.remove('text-top-right')
-        this.elt3.classList.remove('text-top-right')
-        this.elt4.classList.remove('text-top-right')
+        this.suppressionClass('text-top-right')
     }
     removeLeft(){
-        this.elt1.classList.remove('text-left')
-        this.elt2.classList.remove('text-left')
-        this.elt3.classList.remove('text-left')
-        this.elt4.classList.remove('text-left')
+        this.suppressionClass('text-left')
     }
     removeRight(){
-        this.elt1.classList.remove('text-right')
-        this.elt2.classList.remove('text-right')
-        this.elt3.classList.remove('text-right')
-        this.elt4.classList.remove('text-right')
+        this.suppressionClass('text-right')
     }
 }
 const competenceTop = new competences(bottomCircle,rightCircle,leftCircle,topCircle)
@@ -75,17 +51,17 @@ const menu = () => {
             circle.classList.remove('rotation-left-90')
             circle.classList.add('rotation-left-180')
             competenceTop.removeRight()
-            competenceTop.topRight()
+            competenceTop.textOrientation('text-top-right')
         }
         else if(circle.classList.contains('rotation-right-90')){/*ok*/
             circle.classList.remove('rotation-right-90')
             circle.classList.add('rotation-right-180')
             competenceTop.removeLeft()
-            competenceTop.topLeft()
+            competenceTop.textOrientation('text-top-left')
         }
         else{/*ok*/
             circle.classList.add('rotation-right-180')
-            competenceTop.topLeft()
+            competenceTop.textOrientation('text-top-left')
         }
     })
     rightCircle.addEventListener('click',function(){/*ok*/
@@ -97,23 +73,23 @@ const menu = () => {
             circle.classList.remove('rotation-right-180')
             circle.classList.add('rotation-left-90')
             competenceTop.removeTopLeft()
-            competenceTop.right()
+            competenceTop.textOrientation('text-right')
         }
         else if(circle.classList.contains('rotation-left-180')){/*ok*/
             circle.classList.remove('rotation-left-180')
             circle.classList.add('rotation-left-90')
             competenceTop.removeTopRight()
-            competenceTop.right()
+            competenceTop.textOrientation('text-right')
         }
         else if(circle.classList.contains('rotation-right-90')){/*ok*/
             circle.classList.remove('rotation-right-90')
             circle.classList.add('rotation-left-90')
             competenceTop.removeLeft()
-            competenceTop.right()
+            competenceTop.textOrientation('text-right')
         }
         else{/*ok*/
             circle.classList.add('rotation-left-90')
-            competenceTop.right()
+            competenceTop.textOrientation('text-right')
         }
     })
     leftCircle.addEventListener('click',function(){/*ok*/
@@ -125,23 +101,23 @@ const menu = () => {
             circle.classList.remove('rotation-right-180')
             circle.classList.add('rotation-right-90')
             competenceTop.removeTopLeft()
-            competenceTop.left()
+            competenceTop.textOrientation('text-left')
         }
         else if(circle.classList.contains('rotation-left-180')){/*ok*/
             circle.classList.remove('rotation-left-180')
             circle.classList.add('rotation-right-90')
             competenceTop.removeTopRight()
-            competenceTop.left()
+            competenceTop.textOrientation('text-left')
         }
         else if(circle.classList.contains('rotation-left-90')){/*ok*/
             circle.classList.remove('rotation-left-90')
             circle.classList.add('rotation-right-90')
             competenceTop.removeRight()
-            competenceTop.left()
+            competenceTop.textOrientation('text-left')
         }
         else{/*ok*/
             circle.classList.add('rotation-right-90')
-            competenceTop.left()
+            competenceTop.textOrientation('text-left')
         }
     })
     topCircle.addEventListener('click',function(){/*ok*/
